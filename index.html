@@ -7,6 +7,19 @@
     <title>Tech pioneers</title>
 </head>
 <body>
-    
+
+<div >
+    <form class="form">
+        <input id="search" type="text" class="input" onkeyup=searchBlog() placeholder="search..."/>
+    </form>
+</div>
+<button onclick="setHomePagePosts()">Latest</button>
+<button onclick="setTechPosts()">Tech</button>
+<button onclick="setBusinessPosts()">Business</button>
+<div id="cards">
+
+</div>
+
+  <script src='index.js'></script>  
 </body>
 </html>
