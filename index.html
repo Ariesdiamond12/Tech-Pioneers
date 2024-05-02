@@ -4,21 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Tech pioneers</title>
 </head>
 <body>
 
-<div >
-    <form class="form">
-        <input id="search" type="text" class="input" onkeyup=searchBlog() placeholder="search..."/>
+
+<div class="searchbar">
+    <div class="search-buttons">
+        <button onclick="setHomePagePosts()" class="button-searchbar" >Latest</button>
+        <button onclick="setTechPosts()" class="button-searchbar" >Technology</button>
+        <button onclick="setBusinessPosts()" class="button-searchbar" >Business</button>
+    </div>
+    <form class="search-form">
+        <input id="search" type="text" class="search-form-input" onkeyup=searchBlog() placeholder="search..."/>
     </form>
-</div>
-<button onclick="setHomePagePosts()">Latest</button>
-<button onclick="setTechPosts()">Tech</button>
-<button onclick="setBusinessPosts()">Business</button>
-<div id="cards">
 
 </div>
+<div id="cards" onload="setHomePagePosts()">
+
+</div>
+    <script>
+        // Execute the function after the DOM has fully loaded
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            setHomePagePosts(); 
+        });
+    </script>
 
   <script src='index.js'></script> 
   <script src='search.js'></script>  

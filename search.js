@@ -55,7 +55,7 @@ const blogPosts = [
     },
     {
         title: "Augmented Reality in Retail",
-        imageUrl: "https://example.com/ar_retail.jpg",
+        imageUrl: "/Tech-Pioneers/post_images/speaker.jpg",
         excerpt: "Augmented Reality (AR) technology is transforming the retail experience by allowing customers to visualize products in their physical space before making a purchase, enhancing engagement and reducing returns.",
         category: "technology"
     }
@@ -63,7 +63,7 @@ const blogPosts = [
 
 
   
-const searchInput = document.querySelector('.input')
+const searchInput = document.querySelector('.search-form-input')
 const cards = document.getElementById('cards')
 
 function setHomePagePosts(){
@@ -80,7 +80,7 @@ function setHomePagePosts(){
         blogItem.classList.add('card');
 
         blogItem.innerHTML = `
-            <img src=${post.imageUrl} class="round-image" />
+            <img src=${post.imageUrl} class="post-image" />
             <h1>${post.title}</h1>
             <p>${post.excerpt}</p>
         `;
@@ -108,7 +108,7 @@ function setTechPosts(){
         blogItem.classList.add('card');
 
         blogItem.innerHTML = `
-            <img src=${post.imageUrl} class="round-image" />
+            <img src=${post.imageUrl} class="post-image" />
             <h1>${post.title}</h1>
             <p>${post.excerpt}</p>
         `;
@@ -136,7 +136,7 @@ function setBusinessPosts(){
         blogItem.classList.add('card');
 
         blogItem.innerHTML = `
-            <img src=${post.imageUrl} class="round-image" />
+            <img src=${post.imageUrl} class="post-image" />
             <h1>${post.title}</h1>
             <p>${post.excerpt}</p>
         `;
@@ -153,10 +153,10 @@ function setPost( res){
             // set data to the div iis the results are not empty
             res.map(post => {
                 const blogItem = document.createElement('div');
-                blogItem.classList.add('card');
+                blogItem.classList.add('search-card');
 
                 blogItem.innerHTML = `
-                    <img src=${post.imageUrl} class="round-image" />
+                    
                     <h1>${post.title}</h1>
                     <p>${post.excerpt}</p>
                 `;
@@ -189,8 +189,10 @@ function searchBlog(){
             return post.title.toLowerCase().includes(value)
         })
 
-        //TODO: set limit on how many results display
-        setPost(res)
+        //set limit on how many results display
+        const limit = 5; // Change this to your desired limit
+        setPost(res.slice(0, limit));
+        
     }
     else{
         //display the posts that where on the front page first
