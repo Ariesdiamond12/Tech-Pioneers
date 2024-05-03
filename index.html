@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Tech pioneers</title>
 
     <!--CSS link-->
@@ -19,6 +20,7 @@
 
 </head>
 <body>
+
     <!--Hero Section-->
 
     <div class="container col-xxl-8 px-4 py-5">
@@ -37,8 +39,31 @@
           </div>
         </div>
       </div>
-    <div>funi</div>
 
-    
+
+<div class="searchbar">
+    <div class="search-buttons">
+        <button onclick="setHomePagePosts()" class="button-searchbar" >Latest</button>
+        <button onclick="setTechPosts()" class="button-searchbar" >Technology</button>
+        <button onclick="setBusinessPosts()" class="button-searchbar" >Business</button>
+    </div>
+    <form class="search-form">
+        <input id="search" type="text" class="search-form-input" onkeyup=searchBlog() placeholder="search..."/>
+    </form>
+
+</div>
+<div id="cards" onload="setHomePagePosts()">
+
+</div>
+    <script>
+        // Execute the function after the DOM has fully loaded
+        document.addEventListener("DOMContentLoaded", function(event) { 
+            setHomePagePosts(); 
+        });
+    </script>
+
+  <script src='index.js'></script> 
+  <script src='search.js'></script>  
+
 </body>
 </html>
