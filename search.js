@@ -49,7 +49,7 @@ const blogPosts = [
     },
     {
         title: "Data-driven Decision Making",
-        imageUrl: "https://example.com/data_driven.jpg",
+        imageUrl: "https://plus.unsplash.com/premium_photo-1688678097506-6c12a0376238?q=80&w=1398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         excerpt: "Businesses are harnessing the power of data analytics to make informed decisions, identify trends, and optimize processes across various departments, driving growth and efficiency.",
         category: "business"
     },
@@ -64,7 +64,7 @@ const blogPosts = [
 
   
 const searchInput = document.querySelector('.search-form-input')
-const cards = document.getElementById('cards')
+const cards = document.getElementById('post-cards')
 
 function setHomePagePosts(){
     // Clear the existing contents of the cards element
@@ -77,19 +77,21 @@ function setHomePagePosts(){
     }
     posts.map(post => {
         const blogItem = document.createElement('div');
-        blogItem.classList.add('card');
+        blogItem.classList.add('post-card-item');
 
         blogItem.innerHTML = `
+        <a href="">
             <img src=${post.imageUrl} class="post-image" />
-            <h1>${post.title}</h1>
+            <h3>${post.title}</h3>
             <p>${post.excerpt}</p>
+        </a>
         `;
 
         cards.appendChild(blogItem);
     })
 }
 function setTechPosts(){
-    // Clear the existing contents of the cards element
+    // Clear the existing contents of the cards 
     cards.innerHTML = '';
 
     let posts = [];
@@ -105,12 +107,14 @@ function setTechPosts(){
     }
     posts.map(post => {
         const blogItem = document.createElement('div');
-        blogItem.classList.add('card');
+        blogItem.classList.add('post-card-item');
 
         blogItem.innerHTML = `
+        <a href="">
             <img src=${post.imageUrl} class="post-image" />
-            <h1>${post.title}</h1>
+            <h3>${post.title}</h3>
             <p>${post.excerpt}</p>
+        </a>
         `;
 
         cards.appendChild(blogItem);
@@ -133,12 +137,14 @@ function setBusinessPosts(){
     }
     posts.map(post => {
         const blogItem = document.createElement('div');
-        blogItem.classList.add('card');
+        blogItem.classList.add('post-card-item');
 
         blogItem.innerHTML = `
+        <a href="">
             <img src=${post.imageUrl} class="post-image" />
-            <h1>${post.title}</h1>
+            <h3>${post.title}</h3>
             <p>${post.excerpt}</p>
+        </a>
         `;
 
         cards.appendChild(blogItem);
@@ -156,9 +162,10 @@ function setPost( res){
                 blogItem.classList.add('search-card');
 
                 blogItem.innerHTML = `
-                    
-                    <h1>${post.title}</h1>
+                <a href="">
+                    <h3>${post.title}</h3>
                     <p>${post.excerpt}</p>
+                </a>
                 `;
 
                 cards.appendChild(blogItem);
@@ -167,7 +174,7 @@ function setPost( res){
         else{
             // show that nothing was found
             const blogItem = document.createElement('div');
-            blogItem.classList.add('card');
+            blogItem.classList.add('post-card-item');
 
             blogItem.innerHTML = `
                 <p>nothing found</p>
