@@ -60,9 +60,6 @@ a {
     border: none;
 }
 
-}
-
-
 *{
     box-sizing: border-box;
     margin: 0;
@@ -118,7 +115,7 @@ footer {
 
 .bottom {
     display: flex;
-    margin: 20px; 
+    margin: 0px; 
     align-items: center; 
 }
 
@@ -137,15 +134,19 @@ footer {
     margin-bottom: 20px;
 }
 
-nav ul li {
-    list-style-type: none; 
-    display: inline-block;
-    margin-right: 10px;   
+/*footer nav style*/
+.nav-footer {
+    position: relative;  
+}
+.nav-footer li {
+    list-style-type: none;
+    display: inline;
+    margin-left: 20px;
 }
 
-nav ul li a {
+.nav-footer a {
     text-decoration-line: none;
     color: white;
-    padding: 0;
+    font-size: 16px;
 }
 
