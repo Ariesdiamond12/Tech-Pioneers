@@ -1,4 +1,7 @@
-
+a {
+    color: inherit; 
+    text-decoration: none;
+}
 
 .searchbar{
 
@@ -35,7 +38,7 @@
     width: 300px;
     border: none;
 }
-#cards{
+#post-cards{
     display:flex;
     width: 90%;
     margin-left: 5%;
@@ -44,13 +47,19 @@
     justify-content: space-between;
     
 }
-.card{
+.post-card-item{
     width:30%;
     text-align: center;
+    border: none;
+    max-height: 500px; 
+    overflow: hidden;
 }
 .post-image{
     width: 100%;
     height: 200px;
+    border: none;
+}
+
 }
 
 
@@ -61,14 +70,14 @@
     font-family:"Poppins", sans-serif;
 }
 
-p{
+#hero-p{
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal
     line-height 1.8;
 }
 
-h1{
+#hero-h1{
     text-decoration-line: underline;
     text-decoration-thickness: 8px;
     text-decoration-color: #8C52FF;
