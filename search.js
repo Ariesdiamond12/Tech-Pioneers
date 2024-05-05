@@ -1,7 +1,7 @@
 const blogPosts = [
     {
         title: "AI in Customer Service",
-        imageUrl: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/final_keyword_header.width-1000.format-webp.webp",
+        imageUrl: "https://www.ibm.com/blog/wp-content/uploads/2023/09/Generative-AI-Meet-your-partner-in-customer-service.jpg",
         excerpt: "Artificial Intelligence (AI) is revolutionizing customer service by providing personalized experiences and efficient problem resolution through chatbots and virtual assistants.",
         blogURL:"https://www.salesforce.com/blog/customer-service-ai/",
         category: "business"
@@ -15,28 +15,28 @@ const blogPosts = [
     },
     {
         title: "Cloud Computing Adoption",
-        imageUrl: "https://example.com/cloud_computing.jpg",
+        imageUrl: "https://assets-global.website-files.com/5fbc3fcb12d95f9606608540/64ff42d5367fb437b3caf823_Cloud%20Migration%20Case%20Study.png",
         excerpt: "Businesses are increasingly adopting cloud computing services to improve scalability, accessibility, and cost-effectiveness of their IT infrastructure, enabling remote work and efficient data management.",
         blogURL:"",
         category: "business"
     },
     {
         title: "Internet of Things (IoT) in Smart Offices",
-        imageUrl: "https://example.com/iot_smart_office.jpg",
+        imageUrl: "https://imageio.forbes.com/specials-images/imageserve/61b6d5fd475a71fdc7dda795/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds",
         excerpt: "IoT devices in smart offices enhance productivity and efficiency by automating tasks, optimizing energy usage, and providing real-time data insights for informed decision-making.",
         blogURL:"https://www.ibm.com/topics/internet-of-things",
         category: "technology"
     },
     {
         title: "Cybersecurity Measures for Remote Workforce",
-        imageUrl: "https://example.com/cybersecurity_remote_work.jpg",
+        imageUrl: "https://www.dice.com/binaries/medium/content/gallery/dice/insights/2021/02/shutterstock_1794130912.jpg",
         excerpt: "With the rise of remote work, businesses are implementing robust cybersecurity measures such as multi-factor authentication, VPNs, and endpoint security to protect sensitive data from cyber threats.",
         blogURL: "",
         category: "business"
     },
     {
         title: "Embracing the Fourth Industrial Revolution",
-        imageUrl: "https://example.com/4ir.jpg",
+        imageUrl: "https://peoplefactor.co.za/wp-content/uploads/2020/06/AI-banner.jpg",
         excerpt: "The Fourth Industrial Revolution (4IR) is characterized by the fusion of technologies blurring the lines between physical, digital, and biological spheres.",
         blogURL: "",
         category: "technology"
@@ -50,21 +50,21 @@ const blogPosts = [
     },
     {
         title: "Future of Work: Remote Collaboration Tools",
-        imageUrl: "https://example.com/remote_collaboration.jpg",
+        imageUrl: "https://image.cnbcfm.com/api/v1/image/107058698-1652188799963-gettyimages-1369568052-amv-bcn2021wfhoffice0753.jpeg?v=1712684150",
         excerpt: "Remote collaboration tools such as video conferencing, project management platforms, and virtual whiteboards facilitate seamless communication and productivity for distributed teams.",
         blogURL:"https://www.cognizant.com/us/en/glossary/remote-collaboration#:~:text=Remote%20collaboration%20is%20the%20process,even%20far%2Dflung%20employees%20together.",
         category: "technology"
     },
     {
         title: "Data-driven Decision Making",
-        imageUrl: "https://plus.unsplash.com/premium_photo-1688678097506-6c12a0376238?q=80&w=1398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        imageUrl: "https://online.hbs.edu/Style%20Library/api/resize.aspx?imgpath=/PublishingImages/Data-Driven-Decision-Making.jpg&w=1200&h=630",
         excerpt: "Businesses are harnessing the power of data analytics to make informed decisions, identify trends, and optimize processes across various departments, driving growth and efficiency.",
         blogURL:"https://www.tableau.com/learn/articles/data-driven-decision-making#:~:text=What%20is%20data%2Ddriven%20decision,goals%2C%20objectives%2C%20and%20initiatives.",
         category: "business"
     },
     {
         title: "Augmented Reality in Retail",
-        imageUrl: "/Tech-Pioneers/post_images/speaker.jpg",
+        imageUrl: "https://cms.nsflow.com/wp-content/uploads/2023/06/magical-virtual-reality-games-using-hololens-generative-ai-2000x1121.jpg",
         excerpt: "Augmented Reality (AR) technology is transforming the retail experience by allowing customers to visualize products in their physical space before making a purchase, enhancing engagement and reducing returns.",
         blogURL:"https://www.fingent.com/blog/augmented-reality-in-retail-reimagining-the-future-of-shopping/#:~:text=AR%20offers%20an%20excellent%20opportunity,to%20narrow%20down%20their%20choices.",
         category: "technology"
