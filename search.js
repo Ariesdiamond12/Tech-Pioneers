@@ -68,13 +68,14 @@ const blogPosts = [
 const searchInput = document.querySelector('.search-form-input')
 const cards = document.getElementById('post-cards')
 
+
 function setHomePagePosts(){
     // Clear the existing contents of the cards element
     cards.innerHTML = '';
 
     let posts = [];
     const lastIndex = blogPosts.length - 1;
-    
+
     for (let i = lastIndex; i > lastIndex - 3; i--) {
         posts.push(blogPosts[i])
     }
