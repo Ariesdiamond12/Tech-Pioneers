@@ -1,8 +1,9 @@
 const blogPosts = [
     {
         title: "AI in Customer Service",
-        imageUrl: "https://www.salesforce.com/blog/customer-service-ai/",
+        imageUrl: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/final_keyword_header.width-1000.format-webp.webp",
         excerpt: "Artificial Intelligence (AI) is revolutionizing customer service by providing personalized experiences and efficient problem resolution through chatbots and virtual assistants.",
+        blogURL:"https://www.salesforce.com/blog/customer-service-ai/",
         category: "business"
     },
     {
@@ -80,7 +81,7 @@ function setHomePagePosts(){
         blogItem.classList.add('post-card-item');
 
         blogItem.innerHTML = `
-        <a href="">
+        <a href=${post.blogURL} >
             <img src=${post.imageUrl} class="post-image" />
             <h3>${post.title}</h3>
             <p>${post.excerpt}</p>
@@ -110,7 +111,7 @@ function setTechPosts(){
         blogItem.classList.add('post-card-item');
 
         blogItem.innerHTML = `
-        <a href="">
+        <a href=${post.blogURL} >
             <img src=${post.imageUrl} class="post-image" />
             <h3>${post.title}</h3>
             <p>${post.excerpt}</p>
@@ -140,7 +141,7 @@ function setBusinessPosts(){
         blogItem.classList.add('post-card-item');
 
         blogItem.innerHTML = `
-        <a href="">
+        <a href=${post.blogURL} >
             <img src=${post.imageUrl} class="post-image" />
             <h3>${post.title}</h3>
             <p>${post.excerpt}</p>
