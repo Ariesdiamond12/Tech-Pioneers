@@ -7,10 +7,11 @@ const blogPosts = [
         category: "business"
     },
     {
-        title: "Blockchain for Supply Chain Management",
-        imageUrl: "https://example.com/blockchain_supply_chain.jpg",
+        title: "gemini should be a bit longer",
+        imageUrl: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/final_keyword_header.width-1000.format-webp.webp",
         excerpt: "Blockchain technology ensures transparency, traceability, and security in the supply chain by recording transactions in an immutable ledger, reducing fraud and errors.",
-        category: "business"
+        blogURL:"https://blog.google/technology/ai/",
+        category: "technology"
     },
     {
         title: "Cloud Computing Adoption",
@@ -73,6 +74,7 @@ function setHomePagePosts(){
 
     let posts = [];
     const lastIndex = blogPosts.length - 1;
+    
     for (let i = lastIndex; i > lastIndex - 3; i--) {
         posts.push(blogPosts[i])
     }

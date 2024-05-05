@@ -92,7 +92,7 @@ footer {
 
 .footer-content {
     padding: 50px;
-    margin-left: 40%;
+    margin-left: 35%;
     left: 50px;
     font-size: 40px;
     color: white;
@@ -120,7 +120,7 @@ footer {
 }
 
 .copyright, .icons-footer, .nav-footer {
-    margin-left: 250px;
+    margin-left: 200px;
 }
 
 /* icons style */
