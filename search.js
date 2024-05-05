@@ -1,7 +1,7 @@
 const blogPosts = [
     {
         title: "AI in Customer Service",
-        imageUrl: "https://example.com/ai_customer_service.jpg",
+        imageUrl: "https://www.salesforce.com/blog/customer-service-ai/",
         excerpt: "Artificial Intelligence (AI) is revolutionizing customer service by providing personalized experiences and efficient problem resolution through chatbots and virtual assistants.",
         category: "business"
     },
