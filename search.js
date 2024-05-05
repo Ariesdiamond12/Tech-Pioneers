@@ -17,48 +17,56 @@ const blogPosts = [
         title: "Cloud Computing Adoption",
         imageUrl: "https://example.com/cloud_computing.jpg",
         excerpt: "Businesses are increasingly adopting cloud computing services to improve scalability, accessibility, and cost-effectiveness of their IT infrastructure, enabling remote work and efficient data management.",
+        blogURL:"",
         category: "business"
     },
     {
         title: "Internet of Things (IoT) in Smart Offices",
         imageUrl: "https://example.com/iot_smart_office.jpg",
         excerpt: "IoT devices in smart offices enhance productivity and efficiency by automating tasks, optimizing energy usage, and providing real-time data insights for informed decision-making.",
+        blogURL:"https://www.ibm.com/topics/internet-of-things",
         category: "technology"
     },
     {
         title: "Cybersecurity Measures for Remote Workforce",
         imageUrl: "https://example.com/cybersecurity_remote_work.jpg",
         excerpt: "With the rise of remote work, businesses are implementing robust cybersecurity measures such as multi-factor authentication, VPNs, and endpoint security to protect sensitive data from cyber threats.",
+        blogURL: "",
         category: "business"
     },
     {
         title: "Embracing the Fourth Industrial Revolution",
         imageUrl: "https://example.com/4ir.jpg",
         excerpt: "The Fourth Industrial Revolution (4IR) is characterized by the fusion of technologies blurring the lines between physical, digital, and biological spheres.",
+        blogURL: "",
         category: "technology"
     },
     {
         title: "Innovative Marketing Strategies",
         imageUrl: "https://example.com/marketing.jpg",
         excerpt: "Businesses are adopting innovative marketing strategies leveraging social media, influencer partnerships, and personalized content to reach and engage with their target audience.",
+        blogURL: "https://www.forbes.com/sites/forbesbusinesscouncil/2023/05/11/10-innovative-strategies-for-bootstrapped-startup-marketing-on-a-budget/?sh=31b3cf331f40",
         category: "business"
     },
     {
         title: "Future of Work: Remote Collaboration Tools",
         imageUrl: "https://example.com/remote_collaboration.jpg",
         excerpt: "Remote collaboration tools such as video conferencing, project management platforms, and virtual whiteboards facilitate seamless communication and productivity for distributed teams.",
+        blogURL:"https://www.cognizant.com/us/en/glossary/remote-collaboration#:~:text=Remote%20collaboration%20is%20the%20process,even%20far%2Dflung%20employees%20together.",
         category: "technology"
     },
     {
         title: "Data-driven Decision Making",
         imageUrl: "https://plus.unsplash.com/premium_photo-1688678097506-6c12a0376238?q=80&w=1398&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         excerpt: "Businesses are harnessing the power of data analytics to make informed decisions, identify trends, and optimize processes across various departments, driving growth and efficiency.",
+        blogURL:"https://www.tableau.com/learn/articles/data-driven-decision-making#:~:text=What%20is%20data%2Ddriven%20decision,goals%2C%20objectives%2C%20and%20initiatives.",
         category: "business"
     },
     {
         title: "Augmented Reality in Retail",
         imageUrl: "/Tech-Pioneers/post_images/speaker.jpg",
         excerpt: "Augmented Reality (AR) technology is transforming the retail experience by allowing customers to visualize products in their physical space before making a purchase, enhancing engagement and reducing returns.",
+        blogURL:"https://www.fingent.com/blog/augmented-reality-in-retail-reimagining-the-future-of-shopping/#:~:text=AR%20offers%20an%20excellent%20opportunity,to%20narrow%20down%20their%20choices.",
         category: "technology"
     }
 ];
