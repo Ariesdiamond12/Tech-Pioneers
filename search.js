@@ -7,7 +7,7 @@ const blogPosts = [
         category: "business"
     },
     {
-        title: "gemini should be a bit longer",
+        title: "gemini, introducing googles LLM ",
         imageUrl: "https://storage.googleapis.com/gweb-uniblog-publish-prod/images/final_keyword_header.width-1000.format-webp.webp",
         excerpt: "Blockchain technology ensures transparency, traceability, and security in the supply chain by recording transactions in an immutable ledger, reducing fraud and errors.",
         blogURL:"https://blog.google/technology/ai/",
@@ -174,7 +174,7 @@ function setPost( res){
                 blogItem.classList.add('search-card');
 
                 blogItem.innerHTML = `
-                <a href="">
+                <a href=${post.blogURL} >
                     <h3>${post.title}</h3>
                     <p>${post.excerpt}</p>
                 </a>

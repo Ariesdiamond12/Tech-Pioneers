@@ -30,7 +30,7 @@
       <nav class="bg-white px-2 py-3">
         <div class="container mx-0 d-flex justify-content-between">
             <div class="logo">
-                Tech Pioneers
+                <img src="./images/IMG-202402.png" style="height : 50px; object-fit : cover"/>
             </div>
             <div class="d-lg-none">
                 <button type="button" class="btn" title="toggle-menu"><i class="ri-menu-2-line"></i></button>
@@ -50,8 +50,12 @@
 
     </div>
     <body>
-        <div class="container">
+        <div class="container" id="container">
+            <br/>
+            <br/>
+            <br/>
             <h1>About Us</h1>
+            <br/>
             <div class="team-member">
                 <img src="./images/kat-image.jpg" alt="Member 1">
                 <h2>Katlego Masekoameng</h2>
@@ -78,8 +82,41 @@
                 <p>Web Dev</p>
             </div>
         </div>
+
+        <footer>
+            <div class="footer-content">
+            Subscribe to our 
+            <br>
+            newsletter!
+            <br>
+            <input id="email-input" type="email" placeholder="Your email address">
+            <button class="submit-button" type="submit">
+              <i class="fa-solid fa-arrow-right"></i>
+            </button>
+           
+          </div>
+            <div class="bottom">
+                  <div class="copyright">
+                    &copy; 2024 Tech Pioneers
+                  </div>
+                
+                 <div class="icons-footer">
+                   <i class="fa-regular fa-thumbs-up"></i>
+                   <i class="fa-brands fa-x-twitter"></i>
+                   <i class="fa-brands fa-whatsapp"></i>
+                 </div>
+                 <nav class="nav-footer">
+                  <ul>
+                     <li><a href="#">Home</a> </li>
+                     <li><a href="#">About</a> </li>
+                     <li><a href="#">Contact</a> </li>
+                  </ul>
+               </nav>
+            </div>
+          </footer>
+          
         <style>
-        .container {
+        #container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
@@ -87,6 +124,8 @@
         
         h1 {
             text-align: center;
+            text-decoration: underline;
+            text-decoration-color: #8C52FF;
         }
         
         .team-member {
